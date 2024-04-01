@@ -16,6 +16,12 @@ html{
     margin: 0;
 }
 
+.container hr{
+    margin-bottom: 8px;
+    background-color: #650202;
+    height: 3px;
+}
+
 .container-flex{
     display: flex;
 }
@@ -135,7 +141,7 @@ section{
     background-color: #6502028c;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:640px) {
 
     .conteudo{
         display: block;
@@ -159,7 +165,7 @@ section{
 
     .sobre-a-loja h2{
         margin-top: 0;
-        font-size: 8px;
+        font-size: 1.4em;
     }
 
     .sobre-a-loja p{
@@ -167,10 +173,6 @@ section{
         overflow: hidden;
     }
 
-
-    .texto-sobre h2 {
-        margin-top: 0; /* Remove a margem superior do título */
-    }
 
     .texto-sobre p {
         font-size: 1.0em;
@@ -201,16 +203,22 @@ section{
     }
 
     .menu li {
-        margin-bottom: 1px; /* Reduz ainda mais a margem entre os itens do menu */
+        margin-bottom: 1px;
     }
 
     .menu a {
-        font-size: 1.0 em; /* Reduz ainda mais o tamanho da fonte dos itens do menu */
-        padding: 5px 10px; /* Reduz o preenchimento dos itens do menu */
+        font-size: 1.0 em; 
+        padding: 5px 10px; 
     }
 
     .lista-produtos {
         grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .container h2{
+        margin-top: 0;
+        margin-bottom: 8px;
+        font-size: 1.4em;
     }
 
     .lista-produtos img{
@@ -221,12 +229,68 @@ section{
 
 }
 
-@media screen and (min-width: 768px) and (max-width:1024px) {
+@media screen and (min-width: 641px) and (max-width:1023px) {
 
-}
+    .conteudo{
+        display: block;
+    }
 
-@media screen and(min-width:1024px){
-    .botao-menu{
-        display:none
+    .container{
+        max-width: 100%;
+    }
+
+    .sobre-a-loja{
+        max-width: 90%;
+        padding: 0;
+    }
+
+    .sobre-a-loja img{
+        margin-right: 10px;;
+        height: auto;
+        max-height: 350px;
+        float: left
+    }
+
+    
+    .texto-sobre p {
+        font-size: 1.0em;
+        margin-top: 0; /* Remove a margem superior dos parágrafos */
+    }
+
+
+    h1 {
+        font-size: 1.5em;  
+    }
+
+    h2{
+        font-size: 1.0em;
+    }
+
+    .menu-hamburguer {
+        display: none; 
+    }
+
+    nav {
+        display: block; 
+    }
+
+    .menu {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu li {
+        margin-bottom: 1px;
+    }
+
+    .menu a {
+        font-size: 1.0 em; 
+        padding: 5px 10px; 
+    }
+
+
+    .lista-produtos {
+        grid-template-columns: repeat(2, 49%); 
     }
 }
