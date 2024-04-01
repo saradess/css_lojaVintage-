@@ -13,7 +13,7 @@ html{
 .container {
     max-width: 1824px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .container-flex{
@@ -25,14 +25,15 @@ header{
     top: 0;
     left: 0;
     background-color: #650202d9;
-    padding-top: 16px;
     color: #fff;
     display: flex;
-    flex-direction: column; /* Alteração para tornar o contêiner flexível na vertical */
+    flex-direction: column;
+    padding: 10px 0;
+    width: 100%; /* Define a largura do cabeçalho como 100% */
 }
 
 header > .container {
-    justify-content: space-between; /* Alteração para distribuir o espaço entre os itens */
+    justify-content: space-between;
     align-items: center;
     display: flex;
     padding: 20px;
@@ -74,6 +75,11 @@ nav li a{
 height: 600px;
 }
 
+
+.loja.container {
+    width: 100%; /* Define a largura da div como 100% */
+}
+
 section{
     margin-top: 6px;
     padding: 35px;
@@ -85,6 +91,16 @@ section{
     border-radius: 5px;
 }
 
+.sobre-a-loja h2{
+    font-size: 3.0em
+}
+
+.sobre-a-loja p{
+    max-width: 100%;
+    font-size: 2.0em;
+}
+
+
 .lista-produtos {
     display: grid;
     grid-template-columns: repeat(4, 24%); 
@@ -95,12 +111,14 @@ section{
 
 .lista-produtos img{
     max-width: 90%;
+    border-radius: 5px;
 }
 
 .lista-produtos li{
     list-style: none;
     display: flex;
     flex-direction: column;
+    align-items:first baseline;
 }
 
 .lista-produtos li button{
@@ -109,10 +127,106 @@ section{
     background-color:#650202;
     color: #fff;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
 }
 
 .lista-produtos li button:hover{
     background-color: #6502028c;
 }
 
+@media screen and (max-width:767px) {
 
+    .conteudo{
+        display: block;
+    }
+
+    .container{
+        max-width: 100%;
+    }
+
+    .sobre-a-loja{
+        max-width: 90%;
+        padding: 0;
+    }
+
+    .sobre-a-loja img{
+        margin-right: 10px;;
+        height: auto;
+        max-height: 350px;
+        float: left
+    }
+
+    .sobre-a-loja h2{
+        margin-top: 0;
+        font-size: 8px;
+    }
+
+    .sobre-a-loja p{
+        font-size: 1.0em;
+        overflow: hidden;
+    }
+
+
+    .texto-sobre h2 {
+        margin-top: 0; /* Remove a margem superior do título */
+    }
+
+    .texto-sobre p {
+        font-size: 1.0em;
+        margin-top: 0; /* Remove a margem superior dos parágrafos */
+    }
+
+
+    h1 {
+        font-size: 1.5em;  
+    }
+
+    h2{
+        font-size: 1.0em;
+    }
+
+    .menu-hamburguer {
+        display: none; 
+    }
+
+    nav {
+        display: block; 
+    }
+
+    .menu {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu li {
+        margin-bottom: 1px; /* Reduz ainda mais a margem entre os itens do menu */
+    }
+
+    .menu a {
+        font-size: 1.0 em; /* Reduz ainda mais o tamanho da fonte dos itens do menu */
+        padding: 5px 10px; /* Reduz o preenchimento dos itens do menu */
+    }
+
+    .lista-produtos {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .lista-produtos img{
+        margin-right: 10px;;
+        height: auto;
+        max-height: 350px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+
+}
+
+@media screen and(min-width:1024px){
+    .botao-menu{
+        display:none
+    }
+}
