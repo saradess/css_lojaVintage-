@@ -16,35 +16,36 @@ html{
     margin: 0 auto;
 }
 
+.container-flex{
+    display: flex;
+}
+
 header{
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 1;
-
-}
-
-header {
     background-color: #650202d9;
     padding-top: 16px;
     color: #fff;
+    display: flex;
+    flex-direction: column; /* Alteração para tornar o contêiner flexível na vertical */
 }
 
 header > .container {
-    justify-content: space-around;
+    justify-content: space-between; /* Alteração para distribuir o espaço entre os itens */
     align-items: center;
-    padding-bottom: 16px;
+    display: flex;
+    padding: 20px;
 }
 
 nav{
     background-color:#650202d9;
     padding: 16px 0;
-    display: flex;
 }
 
 nav li{
     list-style: none;
-    display: inline;
+    display: inline-block;
     margin-right: 16px;
     font-size: 18px;
     font-weight: bold;
@@ -69,6 +70,49 @@ nav li a{
     margin-bottom: 4px;
 }
 
-.container-flex {
-    display: flex;
+.carrousel img{
+height: 600px;
 }
+
+section{
+    margin-top: 6px;
+    padding: 35px;
+}
+
+.sobre-a-loja img{
+    max-width: 450px;
+    margin-right: 24px;
+    border-radius: 5px;
+}
+
+.lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24%); 
+    column-gap: 1%; 
+    row-gap: 5%;
+    margin: 0 auto;
+}
+
+.lista-produtos img{
+    max-width: 90%;
+}
+
+.lista-produtos li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.lista-produtos li button{
+    padding: 4px;
+    margin-top: 8px;
+    background-color:#650202;
+    color: #fff;
+    cursor: pointer;
+}
+
+.lista-produtos li button:hover{
+    background-color: #6502028c;
+}
+
+
