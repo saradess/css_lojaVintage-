@@ -164,15 +164,30 @@ section{
         display: none;
     }
 
+    .container-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+    }
+    
+    .texto-sobre {
+        margin-top: 20px;
+    }
+
     .sobre-a-loja{
         max-width: 90%;
         padding: 0;
     }
 
+    .texto-sobre hr{
+        margin-left: 34px;
+    }
+
     .sobre-a-loja img{
         margin-right: 10px;;
         height: auto;
-        max-height: 350px;
+        max-height: 150px;
         float: left
     }
 
