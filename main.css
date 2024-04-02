@@ -133,6 +133,7 @@ section{
 .lista-produtos li button{
     padding: 4px;
     margin-top: 8px;
+    margin-bottom: 8px;
     background-color:#650202;
     color: #fff;
     cursor: pointer;
@@ -152,6 +153,11 @@ section{
 
     .container{
         max-width: 100%;
+    }
+
+    header{
+        width: 100%;
+        height: auto;
     }
 
     .carrousel{
@@ -312,5 +318,3 @@ section{
     }
 }
 
-/*falta: ajustar JS do menu-hamburguer, 
-adaptar carrousel para screen >1023*/
