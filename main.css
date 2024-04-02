@@ -30,12 +30,13 @@ header{
     position: sticky;
     top: 0;
     left: 0;
-    background-color: #650202d9;
+    background-color: #650202;
     color: #fff;
     display: flex;
     flex-direction: column;
     padding: 10px 0;
-    width: 100%; /* Define a largura do cabeçalho como 100% */
+    width: 100%; 
+    height: auto;
 }
 
 header > .container {
@@ -46,14 +47,16 @@ header > .container {
 }
 
 nav{
-    background-color:#650202d9;
+    background-color:#65020266;
     padding: 16px 0;
+    display:none;
 }
 
 nav li{
     list-style: none;
     display: inline-block;
     margin-right: 16px;
+    margin-left: 16px;
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
@@ -77,13 +80,13 @@ nav li a{
     margin-bottom: 4px;
 }
 
-.carrousel img{
-height: 600px;
+.carrousel img {
+    width: 100%;
+    height: auto;
 }
 
-
 .loja.container {
-    width: 100%; /* Define a largura da div como 100% */
+    width: 100%;
 }
 
 section{
@@ -151,6 +154,10 @@ section{
         max-width: 100%;
     }
 
+    .carrousel{
+        display: none;
+    }
+
     .sobre-a-loja{
         max-width: 90%;
         padding: 0;
@@ -176,7 +183,7 @@ section{
 
     .texto-sobre p {
         font-size: 1.0em;
-        margin-top: 0; /* Remove a margem superior dos parágrafos */
+        margin-top: 0; 
     }
 
 
@@ -207,7 +214,7 @@ section{
     }
 
     .menu a {
-        font-size: 1.0 em; 
+        font-size: 1.0em; 
         padding: 5px 10px; 
     }
 
@@ -238,6 +245,11 @@ section{
     .container{
         max-width: 100%;
     }
+
+    .carrousel{
+        display: none;
+    }
+
 
     .sobre-a-loja{
         max-width: 90%;
@@ -289,8 +301,16 @@ section{
         padding: 5px 10px; 
     }
 
+    .carrousel img {
+        width: 100%;
+        height: auto;
+    }
+
 
     .lista-produtos {
         grid-template-columns: repeat(2, 49%); 
     }
 }
+
+/*falta: ajustar JS do menu-hamburguer, 
+adaptar carrousel para screen >1023*/
